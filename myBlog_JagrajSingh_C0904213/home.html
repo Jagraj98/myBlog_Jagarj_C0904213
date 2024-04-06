@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-areas:
+                "header header"
+                "section aside"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            grid-area: section;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 1em;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        .float-left {
+            float: left;]
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Book website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="other.html"></a>Other</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>The Amazon Book </h2>
+        <div id="content">
+            <img src="image1.jpg"
+                height="200px" width="200px" class="float-left">
+        </div>
+        <p>At Book Store, we celebrate the magic of books and the joy of reading. With over 15 million titles, our shelves are brimming with literary treasures waiting to be discovered. Whether you’re a bibliophile, a curious reader, or a parent seeking enchanting children’s stories, we’ve got something for everyone.
+            Explore our curated selection of bestsellers, timeless classics, and thought-provoking novels. Dive into gripping mysteries, embark on epic adventures, or lose yourself in heartwarming romances. From hardcovers to paperbacks, audiobooks to graphic novels, Indigo offers a delightful journey through the written word.
+            But we’re more than just books. Our store also features home decor, stationery, and toys that ignite creativity and add a touch of magic to your life. And guess what? Shipping is on us! Plus, if you’re in the neighborhood, swing by our physical store in Scarborough, Ontario1. Our friendly staff awaits, ready to guide you to your next literary escape.</p>
+    </section>
+    <aside>
+        <h3>Sidebar</h3>
+        <h4>More books</h4>
+        <ul>
+            <li><a href="#">Rich dad and Poor dad</a></li>
+            <li><a href="#">Home Workouts</a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Biology</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
